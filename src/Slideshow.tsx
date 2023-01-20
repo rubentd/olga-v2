@@ -14,7 +14,8 @@ const images:string[] = [
 
 const Slideshow = () => {
   return (
-    <Box>
+    <Box marginTop="-8px" position="relative">
+      <Box className="overlay" />
       <Slide>
         {
           images.map((image, index) => (
@@ -23,7 +24,7 @@ const Slideshow = () => {
               style={{
                 'backgroundImage': `url(${image})`,
                 'backgroundSize': 'cover',
-                'backgroundPosition': 'center',
+                'backgroundPosition': '50% 30%',
                 'position': 'relative', 
               }}
               width="100%"

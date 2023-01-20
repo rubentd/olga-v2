@@ -1,6 +1,8 @@
 import Header from './Header';
-//import TopLogo from './TopLogo';
 import Slideshow from './Slideshow';
+import Experience from './Experience';
+import Contact from './Contact';
+import Footer from './Footer';
 import Box from './Box';
 
 const Landing = () => {
@@ -10,6 +12,9 @@ const Landing = () => {
     <Box>
       <Header />
       <Slideshow />
+      <Experience />
+      <Contact />
+      <Footer />
     </Box>
   )
 }
