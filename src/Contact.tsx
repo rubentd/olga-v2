@@ -1,5 +1,8 @@
-import whiteBg from './img/white-bg-2.png';
 import Box from "./Box";
+import whiteBg from './img/white-bg-2.png';
+import emailIcon from './img/email-icon-outlined.png';
+import phoneIcon from './img/phone-icon-black.png';
+import locationIcon from './img/location-icon-black.png';
 
 const Contact = () => (
   <Box
@@ -15,7 +18,7 @@ const Contact = () => (
         p={4}
       >
         <form action="https://formcarry.com/s/0POcr846YY" method="POST">
-          <h4>
+          <h4 style={{ marginBottom: '16px' }}>
             CONTACTO
           </h4>
           <Box mb={1}>Nombre</Box>
@@ -52,7 +55,57 @@ const Contact = () => (
         backgroundSize="cover"
         p={4}
       >
-        Email
+        <Box display="flex" alignItems="center" mb={2}>
+          <Box mr={3}>
+            <img src={emailIcon} alt="email" width="32px" style={{ filter: 'brightness(20%)' }} />
+          </Box>
+          <h4>
+            Email:
+          </h4>
+        </Box>
+
+        <Box ml="48px" mb={3}>
+          direccionob@olgabayone.com
+        </Box>
+
+        <Box display="flex" alignItems="center" mb={2}>
+          <Box mr={3}>
+            <img src={phoneIcon} alt="phone" width="32px" style={{ filter: 'brightness(20%)' }} />
+          </Box>
+          <h4>
+            Teléfono:
+          </h4>
+        </Box>
+
+        <Box ml="48px" mb={3}>
+          <Box>0241-872-4008</Box>
+          <Box>0416-235-3485</Box>
+        </Box> 
+
+        <Box display="flex" alignItems="center" mb={2}>
+          <Box mr={3}>
+            <img src={locationIcon} alt="location" width="32px" style={{ filter: 'brightness(20%)' }} />
+          </Box>
+          <h4>
+            Ubicación:
+          </h4>
+        </Box>
+
+        <Box ml="48px" mb={3}>
+          <Box>Av. Intercomunal Don Julio Centeno,</Box>
+          <Box>Urbanización Sansur. San Diego,</Box>
+          <Box>Carabobo, Venezuela.</Box>
+        </Box>
+
+        <Box ml="48px" display="flex" alignItems="center" mb={2}>
+          <h4>
+            Rif:
+          </h4>
+        </Box>
+
+        <Box ml="48px" mb={4}>
+          J306066225
+        </Box>
       </Box>
     </Box>
   </Box>
