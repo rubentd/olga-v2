@@ -60,10 +60,12 @@ const Header = () => {
               <Link to="/nosotros">Nosotros</Link>
             </Box>
             <Box mr={4}>
-              <Link to="/#contacto">Contáctanos</Link>
+              <a href="/#contacto">Contáctanos</a>
             </Box>
             <Box py={1} px={2} border="2px solid #666" borderRadius="16px">
-              <img src={eduRedLogo} alt="EduRed" width="100px" />
+              <a href="https://edudatos.com/Colegios/Colegio1.asp?CodigoOmad=PD02050812" target="_blank" rel="noopener noreferrer">
+                <img src={eduRedLogo} alt="EduRed" width="100px" />
+              </a>
             </Box>
           </Box>
 

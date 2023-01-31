@@ -23,6 +23,29 @@ code {
   display: none !important;
 }
 
+input, textarea {
+  width: 280px;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+
+h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+}
 
 a {
   color: #000 !important;
@@ -45,3 +68,8 @@ a {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  input, textarea {
+    width: 100%;
+  }
+}

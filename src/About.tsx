@@ -1,8 +1,9 @@
-const About = () => {
+import Header from "./Header";
 
+const About = () => {
   return (
     <div>
-      Nosotros
+      <Header />
     </div>
   )
 }
