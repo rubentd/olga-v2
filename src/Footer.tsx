@@ -7,21 +7,23 @@ const Footer = () => (
     width="100%"
     p={4}
   >
-    <Box mb={1} fontSize="14px">
-      Unidad Educativa Olga Bayone de Rodríguez.
-    </Box>
-    <Box mb={2} fontSize="14px">
-      Todos los derechos reservados 2023.
-    </Box>
-    <Box
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <img src={logoMedium} alt="U.E. Olga Bayone" style={{
-        width: '80%',
-        maxWidth: '328px',
-      }} />
+    <Box maxWidth="1200px" margin="0 auto">
+      <Box mb={1} fontSize="14px">
+        Unidad Educativa Olga Bayone de Rodríguez.
+      </Box>
+      <Box mb={2} fontSize="14px">
+        Todos los derechos reservados 2023.
+      </Box>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <img src={logoMedium} alt="U.E. Olga Bayone" style={{
+          width: '80%',
+          maxWidth: '328px',
+        }} />
+      </Box>
     </Box>
   </Box>
 )

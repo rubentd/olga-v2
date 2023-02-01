@@ -26,29 +26,35 @@ const About = () => {
         minHeight="400px"
         backgroundImage={`url(${yellowBg})`}
         backgroundSize="cover"
-        display="flex"
-        flexWrap="wrap"
-        alignItems="center"
-        justifyContent={['center', 'space-between']}
       >
-        <Box width={['100%', '50%']} display="flex" justifyContent="center">
+        <Box maxWidth="1200px" margin="0 auto">
+
           <Box
-            backgroundImage={`url(${kidsTable})`}
-            backgroundSize="120%"
-            backgroundPosition="center center"
-            width="320px"
-            height="320px"
-            borderRadius="50%"
-            border="8px solid #eac83f"
-            boxShadow="0 0 20px rgba(0, 0, 0, .4)"
+            display="flex"
+            flexWrap="wrap"
+            alignItems="center"
+            justifyContent={['center', 'space-between']}
           >
-          </Box>
-        </Box>
-        
-        <Box p={4} width={['100%', '50%']}>
-          <h4>NOSOTROS</h4>
-          <Box mt={2} maxWidth="400px" fontSize="24px">
-            Somos una institución fundada en el año 2000, la cual es pionera en el ámbito educativo dentro del estado Carabobo.
+            <Box width={['100%', '50%']} display="flex" justifyContent="center">
+              <Box
+                backgroundImage={`url(${kidsTable})`}
+                backgroundSize="120%"
+                backgroundPosition="center center"
+                width="320px"
+                height="320px"
+                borderRadius="50%"
+                border="8px solid #eac83f"
+                boxShadow="0 0 20px rgba(0, 0, 0, .4)"
+              >
+              </Box>
+            </Box>
+            
+            <Box p={4} width={['100%', '50%']}>
+              <h4>NOSOTROS</h4>
+              <Box mt={2} maxWidth="400px" fontSize="24px">
+                Somos una institución fundada en el año 2000, la cual es pionera en el ámbito educativo dentro del estado Carabobo.
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>
