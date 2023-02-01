@@ -12,7 +12,7 @@ const Experience = () => (
       backgroundImage={`url(${whiteBg})`}
       backgroundSize="cover"
     >
-      <Box width="100%" maxWidth="1200px" height="100%" margin="0 auto" p={4}>
+      <Box width="100%" maxWidth="1200px" height="100%" margin="0 auto">
         <Box display="flex" flexWrap="wrap" alignItems="center" justifyContent="center" minHeight="380px">
           <Box
             width={['100%', '50%']}

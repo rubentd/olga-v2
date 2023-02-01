@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from  "react-router-dom" ;
 import Box from "./Box";
 import logoMedium from "./img/logo-medium-white-bg.png";
@@ -5,8 +6,16 @@ import eduRedLogo from "./img/edured.png";
 import phone from './img/phone-icon.png';
 import location from './img/location-icon.png';
 import email from './img/email-icon.png';
+import menuIcon from './img/menu-icon.png';
+import closeIcon from './img/close-icon.png';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
     <Box
       width="100%"
@@ -86,6 +95,63 @@ const Header = () => {
               </Box>
             </a>
           </Box>
+
+          <Box display={['block', 'none', 'none']} p={2} onClick={toggleMenu}>
+            { menuOpen ? (
+              <img src={closeIcon} width="40px" alt="close menu" />
+            ) : (
+              <img src={menuIcon} width="40px" alt="open menu" />
+            )}
+          </Box>
+
+          {
+            menuOpen && (
+              <Box
+                position="absolute"
+                top="120px"
+                left={0}
+                width="100%"
+                backgroundColor="rgba(0, 0, 0, .6)"
+                py={5}
+              >
+                <Box
+                  margin="8px auto"
+                  backgroundColor="white"
+                  border="2px solid #333"
+                  width="200px"
+                  textAlign="center"
+                  p={2}
+                >
+                  <Link to="/">Inicio</Link>
+                </Box>
+                <Box
+                  margin="8px auto"
+                  backgroundColor="white"
+                  border="2px solid #333"
+                  width="200px"
+                  textAlign="center"
+                  p={2}
+                >
+                  <Link to="/nosotros">Nosotros</Link>
+                </Box>
+                <Box
+                  margin="8px auto"
+                  backgroundColor="white"
+                  border="2px solid #333"
+                  width="200px"
+                  textAlign="center"
+                  p={2}
+                >
+                  <a href="/#contacto">Contáctanos</a>
+                </Box>
+                <Box py={1} width="180px" margin="0 auto" textAlign="center" px={2} border="2px solid #666" borderRadius="16px" backgroundColor="white">
+                  <a href="https://edudatos.com/Colegios/Colegio1.asp?CodigoOmad=PD02050812" target="_blank" rel="noopener noreferrer">
+                    <img src={eduRedLogo} alt="EduRed" width="100px" />
+                  </a>
+                </Box>
+              </Box>
+            )
+          }
         </Box>
       </Box>
     </Box>

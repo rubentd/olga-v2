@@ -27,6 +27,8 @@ code {
 input, textarea {
   width: 280px;
   border: 2px solid black;
+  padding: 8px;
+  font-size: 16px;
   border-radius: 3px;
   font-family: 'Montserrat', sans-serif;
 }
